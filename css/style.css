@@ -1,0 +1,341 @@
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar .nav-item{
+    padding: 10px;
+}
+/* header start*/
+.home
+{
+    background-image: url(../img/img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.home p 
+{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.home h1::after
+{
+    content: '|';
+    animation: typing 3s linear  infinite alternate ;
+
+}
+@keyframes typing {
+    0%{content: 'A |';}
+    5%{content: 'A De|';}
+    10%{content: 'A Des|';}
+    15%{content: 'A Desi|';}
+    20%{content: 'A Desig|';}
+    25%{content: 'A Design|';}
+    30%{content: 'A Designer|';}
+    40%{content: 'A Design|';}
+    50%{content: 'A Desig|';}
+    55%{content: 'A Desi|';}
+    70%{content: 'A Des|';}
+    80%{content: 'A De|';}
+    90%{content: 'A D|';}
+    95%{content: 'A |';}
+    100%{content: '|';}
+    
+
+    
+}
+.home .header-icon{
+    color: white;
+    background-color:rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 12px 15px;
+    margin: 10px 0px;
+
+
+}
+.home .header-icon:hover{
+    cursor: pointer;
+}
+/* header end */
+/* aboutme start */
+.hero .hero-img {
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+.hero .hero-img:after {
+    content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../img/img/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.hero .btn.btn-dark{
+    font-size:12px;
+    color: white;
+    transition: all 0.5s;
+
+
+}
+.hero .btn.btn-dark:hover{
+    font-size:12px;
+    color: black;
+    background-color: white;
+    
+
+}
+.hero .btn.btn-light{
+    font-size:12px;
+    color: black;
+    border:solid 1px black;
+    background-color: white;
+    
+    transition: all 0.5s;
+
+
+}
+.hero .btn.btn-light:hover{
+    font-size:12px;
+    color: white;
+    border:solid 1px black;
+    background-color: black;
+    
+    
+
+}
+/* aboutMe end */
+/* services start */
+.services .services-unit{
+    background-color: white;
+}
+.head-section {
+    
+    font-weight: 900!important;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+
+}
+.head-section:after
+{
+        content: '';
+    width: 100%;
+    height: 30px;
+    background-image: url(../img/img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.services .services-unit .services-icon 
+{
+padding: 30px 23px;
+background-color: #f8f9fa;
+border-radius: 50%;
+color: black;
+transition: all 0.5s;
+
+}
+.services .services-unit:hover .services-icon
+{
+color: white;
+padding: 30px 23px;
+background-color: black;
+border-radius: 50%;
+
+}
+
+/* services end */
+/* portfolio start */
+
+.work .nav-pills .nav-link.active
+{
+    background-color: white;
+    color: black;
+    position: relative;
+    
+}
+.work .nav-pills .nav-link.active::after
+{
+    
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    background-color: black;
+    height: 3px;
+    width: 50%;
+    z-index: 3;
+    
+}
+.work .nav-pills .nav-link 
+{
+    color: black;
+    transition: all .5s;
+}
+
+.work-item .work-layer
+{
+    
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    
+
+    opacity: 0;
+    transition: all 1s;
+}
+.work-item:hover .work-layer
+{
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    opacity: 1;
+    
+}
+.work-item:hover .work-text
+{
+    top: 0 !important;
+}
+.work-item .work-text
+{
+    transition: all 1s;
+}
+.work-item:hover img 
+{
+    transform: scale(1.0);
+}
+.work-item img 
+{
+    transition: all 1s;
+}
+
+.work .work-text i
+{
+padding: 10px 11px;
+background-color: black;
+border-radius: 50%;
+color: white;
+transition: all 0.5s;
+border: 1px solid black;
+font-size: 12px;
+
+}
+.work .work-text i:hover
+{
+font-size: 12px;
+color: black;
+padding: 10px 11px;
+background-color: white;
+border-radius: 50%;
+border: 1px solid black;
+cursor: pointer;
+}
+/* portfolio end */
+/* testomonial start */
+.cleint-content i 
+{
+    color: #5f5a5b;
+    font-size: 48px;
+}
+
+.carousel-indicators [data-bs-target] 
+{
+    width: 15px;
+    height: 15px;
+    background-color: #312d2d;
+    margin: 10px;
+    border-radius: 50%;
+}
+.carousel-indicators .active 
+{
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+}
+/* testmonial end */
+/* blog start */
+/* blog end */
+/* contact-us starts */
+
+.contacts-icons i
+{
+padding: 31px 25px;
+background-color: #f8f9fa;
+border-radius: 50%;
+color: black;
+transition: all 0.5s;
+
+}
+.contacts-icons i:hover
+{
+color: white;
+padding: 31px 25px;
+background-color: black;
+border-radius: 50%;
+
+}
+/* contact-us end */
+/* footer */
+
+
+footer p {
+    font-size: 13px;
+    word-spacing: 2px;
+        line-height: 1.6;
+    margin: 0;
+    color: silver;
+}
+.hidden{
+    overflow: hidden;
+}
+.portfolio img{
+    width: 100%;
+}
+.portfolio i {
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 50%;
+    padding: 5px 8px;
+    margin-top: 25px;
+    font-size: 24px;
+}
+.unit3{
+    background-color: white;
+}
+.unit3 img{
+    transition: all 1s;
+}
+.unit3:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.ourblog-unit{
+    text-align: left;
+    transition: all 1s;
+    background-color: white;
+}
+ourblog-unit:hover img{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.ourblog-unit .unit-text{
+     padding: 10px;
+}
+.ourblog-unit .unit-text h6{
+     padding: 10px;
+}
+.ourblog-unit .unit-text h5{
+     padding: 10px;
+}
